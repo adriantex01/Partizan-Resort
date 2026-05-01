@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghid Complet: Website de la 0 la LIVE</title>
+    <style>
+        @font-face {
+            font-family: 'Open Sans';
+            src: local('Open Sans');
+            font-weight: normal;
+        }
+        @font-face {
+            font-family: 'Open Sans';
+            src: local('Open Sans Bold');
+            font-weight: bold;
+        }
+        @font-face {
+            font-family: 'DejaVu Sans Mono';
+            src: local('DejaVu Sans Mono');
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        .cover {
+            background: #080510;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            page-break-after: always;
+        }
+        
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        
+        .logo-accent {
+            color: #9523ff;
+        }
+        
+        .cover h1 {
+            font-size: 56px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .cover .subtitle {
+            font-size: 24px;
+            color: #00D4FF;
+            margin-bottom: 60px;
+        }
+        
+        .cover .meta {
+            font-size: 16px;
+            color: #ccc;
+        }
+        
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 60px;
+        }
+        
+        h1 {
+            color: #080510;
+            font-size: 36px;
+            margin: 40px 0 20px 0;
+            border-bottom: 3px solid #9523ff;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #1c122a;
+            font-size: 28px;
+            margin: 30px 0 15px 0;
+            border-left: 5px solid #9523ff;
+            padding-left: 15px;
+        }
+        
+        h3 {
+            color: #080510;
+            font-size: 22px;
+            margin: 25px 0 12px 0;
+            font-weight: bold;
+        }
+        
+        h4 {
+            color: #1c122a;
+            font-size: 18px;
+            margin: 20px 0 10px 0;
+            font-weight: bold;
+        }
+        
+        p {
+            margin: 12px 0;
+            text-align: justify;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .tip {
+            background: #d1ecf1;
+            border-left: 5px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .success {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        
+        .step {
+            background: #f8f9fa;
+            border: 2px solid #9523ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .step-number {
+            background: #9523ff;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+        
+        .step-title {
+            display: inline;
+            font-size: 24px;
+            font-weight: bold;
+            color: #080510;
+            vertical-align: middle;
+        }
+        
+        code {
+            background: #1c122a;
+            color: #00D4FF;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-family: 'DejaVu Sans Mono', monospace;
+            font-size: 14px;
+        }
+        
+        pre {
+            background: #1c122a;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'DejaVu Sans Mono', monospace;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+        
+        pre code {
+            background: none;
+            padding: 0;
+            color: #00D4FF;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin: 8px 0;
+        }
+        
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .checklist li:before {
+            content: "☐ ";
+            color: #9523ff;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th {
+            background: #9523ff;
+            color: #fff;
+            padding: 12px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+        
+        tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        .footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 2px solid #9523ff;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+    </style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover">
+    <div class="logo">
+        <span class="logo-accent">&gt;</span> Agentic
+    </div>
+    <h1>GHID COMPLET<br/>Website de la 0 la LIVE</h1>
+    <div class="subtitle">Pentru Partizan Resort & Toți Clienții Viitori</div>
+    <div class="meta">
+        Versiunea 1.0 | Mai 2026<br/>
+        Creat de Agentic - createagentics.com
+    </div>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="content">
+    <h1>Cuprins</h1>
+    <ol>
+        <li><strong>Pregătirea Mediului de Lucru</strong> ..................................... 3</li>
+        <li><strong>Instalare Node.js și Instrumente</strong> ................................. 4</li>
+        <li><strong>Setup Proiect Local</strong> ................................................... 6</li>
+        <li><strong>Testare Website Local</strong> ................................................ 8</li>
+        <li><strong>Deployment pe Vercel</strong> .................................................. 9</li>
+        <li><strong>Configurare Domeniu Custom</strong> ....................................... 12</li>
+        <li><strong>Personalizare Conținut</strong> ............................................... 14</li>
+        <li><strong>Optimizări Post-Launch</strong> .............................................. 17</li>
+        <li><strong>Troubleshooting</strong> ......................................................... 19</li>
+        <li><strong>Checklist Final</strong> ............................................................ 21</li>
+    </ol>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 1 -->
+<div class="content">
+    <h1>1. Pregătirea Mediului de Lucru</h1>
+    
+    <p>Înainte de a începe, asigură-te că ai tot ce îți trebuie pentru a dezvolta și publica website-ul.</p>
+    
+    <div class="warning">
+        <strong>⚠️ IMPORTANT:</strong> Acest ghid funcționează pe Windows, macOS și Linux. Pașii sunt identici, doar comenzile pot varia ușor.
+    </div>
+    
+    <h2>Ce ai nevoie:</h2>
+    
+    <ul class="checklist">
+        <li>Un computer cu Windows 10+, macOS 10.15+, sau Linux</li>
+        <li>Conexiune la internet stabilă</li>
+        <li>Domeniul cumpărat (ex: partizanresort.com)</li>
+        <li>Email business (ex: contact@partizanresort.com)</li>
+        <li>Poze de calitate pentru website (min. 1920x1080px)</li>
+        <li>Informații despre business (prețuri, servicii, descrieri)</li>
+        <li>2-3 ore de timp liber</li>
+    </ul>
+    
+    <h2>Software necesar:</h2>
+    
+    <table>
+        <tr>
+            <th>Tool</th>
+            <th>Scop</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>Node.js</td>
+            <td>Runtime pentru aplicația Next.js</td>
+            <td>nodejs.org</td>
+        </tr>
+        <tr>
+            <td>Git</td>
+            <td>Version control (opțional dar recomandat)</td>
+            <td>git-scm.com</td>
+        </tr>
+        <tr>
+            <td>VS Code</td>
+            <td>Editor de cod (recomandat)</td>
+            <td>code.visualstudio.com</td>
+        </tr>
+        <tr>
+            <td>Cont Vercel</td>
+            <td>Hosting GRATUIT pentru website</td>
+            <td>vercel.com</td>
+        </tr>
+    </table>
+    
+    <div class="tip">
+        <strong>💡 TIP PRO:</strong> Dacă ai deja VS Code instalat, sari direct la următoarea secțiune!
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 2 -->
+<div class="content">
+    <h1>2. Instalare Node.js și Instrumente</h1>
+    
+    <div class="step">
+        <span class="step-number">1</span>
+        <span class="step-title">Descarcă Node.js</span>
+        <p style="margin-top: 15px;">Mergi pe <code>https://nodejs.org</code> și descarcă versiunea <strong>LTS (Long Term Support)</strong> - versiunea cu cifre PARE (ex: 20.x.x, nu 21.x.x).</p>
+        <ul>
+            <li><strong>Windows:</strong> Descarcă <code>.msi</code> installer</li>
+            <li><strong>macOS:</strong> Descarcă <code>.pkg</code> installer</li>
+            <li><strong>Linux:</strong> Folosește package manager-ul tău (apt, yum, etc.)</li>
+        </ul>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Instalează Node.js</span>
+        <p style="margin-top: 15px;">Rulează installer-ul descărcat și urmează pașii:</p>
+        <ol>
+            <li>Dublu-click pe fișierul descărcat</li>
+            <li>Click <strong>Next</strong> → <strong>Accept</strong> → <strong>Next</strong></li>
+            <li>Asigură-te că este bifat <strong>"Automatically install necessary tools"</strong></li>
+            <li>Click <strong>Install</strong> și așteaptă 2-3 minute</li>
+            <li>Click <strong>Finish</strong></li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">3</span>
+        <span class="step-title">Verifică Instalarea</span>
+        <p style="margin-top: 15px;">Deschide <strong>Command Prompt</strong> (Windows) sau <strong>Terminal</strong> (macOS/Linux) și scrie:</p>
+        <pre><code>node --version</code></pre>
+        <p>Ar trebui să vezi ceva de genul: <code>v20.12.0</code></p>
+        <p>Apoi verifică npm:</p>
+        <pre><code>npm --version</code></pre>
+        <p>Ar trebui să vezi: <code>10.5.0</code> sau similar</p>
+    </div>
+    
+    <div class="success">
+        <strong>✅ SUCCES!</strong> Dacă ai văzut version numbers, Node.js este instalat corect!
+    </div>
+    
+    <div class="step">
+        <span class="step-number">4</span>
+        <span class="step-title">Instalează VS Code (Opțional)</span>
+        <p style="margin-top: 15px;">Mergi pe <code>https://code.visualstudio.com</code>, descarcă și instalează VS Code pentru sistemul tău de operare.</p>
+        <p>După instalare, deschide VS Code și instalează extensia <strong>"ES7+ React/Redux/React-Native snippets"</strong> din Marketplace (Ctrl+Shift+X).</p>
+    </div>
+    
+    <div class="warning">
+        <strong>⚠️ ATENȚIE WINDOWS:</strong> După instalare, TREBUIE să închizi și redeschizi Command Prompt-ul ca să fie recunoscute comenzile!
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 3 -->
+<div class="content">
+    <h1>3. Setup Proiect Local</h1>
+    
+    <p>Acum ai tot ce îți trebuie instalat. Hai să configurăm proiectul website-ului!</p>
+    
+    <div class="step">
+        <span class="step-number">1</span>
+        <span class="step-title">Creează un Folder pentru Proiect</span>
+        <p style="margin-top: 15px;">Alege o locație pe computer unde să păstrezi proiectul. De exemplu:</p>
+        <ul>
+            <li><strong>Windows:</strong> <code>C:\Users\Adrian\Projects\partizan-website</code></li>
+            <li><strong>macOS:</strong> <code>/Users/adrian/Projects/partizan-website</code></li>
+            <li><strong>Linux:</strong> <code>/home/adrian/Projects/partizan-website</code></li>
+        </ul>
+        <p>Creează folder-ul manual sau prin command line:</p>
+        <pre><code>mkdir partizan-website
+cd partizan-website</code></pre>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Copiază Fișierele Proiectului</span>
+        <p style="margin-top: 15px;">Am pregătit toate fișierele proiectului în folder-ul <code>partizan-website</code>. Copiază TOATĂ structura de foldere în locația ta:</p>
+        <ul>
+            <li><code>package.json</code> - Dependențele proiectului</li>
+            <li><code>src/</code> - Codul sursă al website-ului</li>
+            <li><code>public/</code> - Imagini și assets</li>
+            <li><code>tailwind.config.ts</code> - Configurare stiluri</li>
+            <li>Toate celelalte fișiere din proiect</li>
+        </ul>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">3</span>
+        <span class="step-title">Instalează Dependențele</span>
+        <p style="margin-top: 15px;">Deschide <strong>Command Prompt</strong> sau <strong>Terminal</strong> în folder-ul proiectului și rulează:</p>
+        <pre><code>npm install</code></pre>
+        <p>Acest proces va dura <strong>2-5 minute</strong> și va descărca toate librăriile necesare (React, Next.js, Tailwind, etc.). Vei vedea un progress bar și multe linii de text.</p>
+        <div class="warning">
+            <strong>⚠️ ATENȚIE:</strong> Dacă vezi <code>WARN</code> messages, nu-i bai! Doar <code>ERROR</code> messages sunt probleme.
+        </div>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">4</span>
+        <span class="step-title">Verifică Structura</span>
+        <p style="margin-top: 15px;">După instalare, ar trebui să vezi un folder <code>node_modules/</code> creat automat. Structura finală:</p>
+        <pre><code>partizan-website/
+├── node_modules/         (creat automat, MARE ~500MB)
+├── public/
+│   └── images/
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── data/
+│   └── types/
+├── package.json
+├── next.config.js
+├── tailwind.config.ts
+└── README.md</code></pre>
+    </div>
+    
+    <div class="success">
+        <strong>✅ GATA!</strong> Proiectul este configurat local. Next step: testare!
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 4 -->
+<div class="content">
+    <h1>4. Testare Website Local</h1>
+    
+    <p>Înainte de a publica website-ul online, hai să-l testăm local pentru a verifica că totul funcționează.</p>
+    
+    <div class="step">
+        <span class="step-number">1</span>
+        <span class="step-title">Rulează Development Server</span>
+        <p style="margin-top: 15px;">În terminal (în folder-ul proiectului), rulează:</p>
+        <pre><code>npm run dev</code></pre>
+        <p>Vei vedea ceva similar cu:</p>
+        <pre><code>▲ Next.js 14.2.3
+- Local:        http://localhost:3000
+- ready in 2.1s</code></pre>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Deschide în Browser</span>
+        <p style="margin-top: 15px;">Deschide browser-ul preferat (Chrome, Firefox, Safari, Edge) și mergi la:</p>
+        <pre><code>http://localhost:3000</code></pre>
+        <p>Ar trebui să vezi website-ul LIVE, funcțional, cu toate secțiunile!</p>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">3</span>
+        <span class="step-title">Testează Funcționalitățile</span>
+        <p style="margin-top: 15px;">Verifică că totul funcționează:</p>
+        <ul class="checklist">
+            <li>Navigarea între secțiuni (click pe menu)</li>
+            <li>Scroll smooth între secțiuni</li>
+            <li>Butoanele "Rezervă Acum" (ar trebui să deschidă WhatsApp)</li>
+            <li>Formularul de contact</li>
+            <li>Responsive design (resize browser window sau testează pe telefon)</li>
+            <li>Imaginile se încarcă (dacă le-ai adăugat deja)</li>
+        </ul>
+    </div>
+    
+    <div class="tip">
+        <strong>💡 TIP PRO:</strong> Lasă terminalul deschis cu <code>npm run dev</code> rulând. Orice modificări faci în cod se vor reflecta INSTANT în browser (Hot Reload)!
+    </div>
+    
+    <div class="step">
+        <span class="step-number">4</span>
+        <span class="step-title">Oprește Server-ul</span>
+        <p style="margin-top: 15px;">Când termini testarea, revino în terminal și apasă <code>Ctrl + C</code> pentru a opri server-ul local.</p>
+    </div>
+    
+    <div class="warning">
+        <strong>⚠️ IMPORTANT:</strong> Website-ul funcționează DOAR cât timp rulezi <code>npm run dev</code>. După ce oprești comanda, localhost:3000 nu va mai funcționa. Pentru a-l face accesibil online 24/7, trebuie să-l publici pe Vercel (next step)!
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 5 -->
+<div class="content">
+    <h1>5. Deployment pe Vercel</h1>
+    
+    <p>Vercel este platforma GRATUITĂ și SUPER RAPIDĂ pentru hosting Next.js. Zero configurare, SSL automat, CDN global inclus!</p>
+    
+    <h2>Metoda 1: Deploy prin GitHub (RECOMANDAT)</h2>
+    
+    <div class="step">
+        <span class="step-number">1</span>
+        <span class="step-title">Creează Cont GitHub</span>
+        <p style="margin-top: 15px;">Mergi pe <code>https://github.com</code> și creează un cont gratuit dacă nu ai deja.</p>
+        <ol>
+            <li>Click <strong>Sign up</strong></li>
+            <li>Introdu email, password, username</li>
+            <li>Verifică email-ul primit</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Creează Repository</span>
+        <p style="margin-top: 15px;">După login, în GitHub:</p>
+        <ol>
+            <li>Click butonul verde <strong>"New"</strong> (stânga sus)</li>
+            <li>Repository name: <code>partizan-resort-website</code></li>
+            <li>Lasă <strong>Public</strong> selectat</li>
+            <li>NU bifa "Add README" (avem deja)</li>
+            <li>Click <strong>Create repository</strong></li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">3</span>
+        <span class="step-title">Push Codul pe GitHub</span>
+        <p style="margin-top: 15px;">În terminal, în folder-ul proiectului, rulează comenzile de mai jos EXACT în ordinea asta:</p>
+        <pre><code>git init
+git add .
+git commit -m "Initial commit - Partizan Resort Website"
+git branch -M main
+git remote add origin https://github.com/USERNAME/partizan-resort-website.git
+git push -u origin main</code></pre>
+        <p><strong>ATENȚIE:</strong> Înlocuiește <code>USERNAME</code> cu username-ul tău GitHub!</p>
+        <p>La primul push, îți va cere username și password GitHub. Introdu-le.</p>
+    </div>
+    
+    <div class="success">
+        <strong>✅ BRAVO!</strong> Codul este acum pe GitHub! Poți vedea repository-ul la <code>github.com/USERNAME/partizan-resort-website</code>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">4</span>
+        <span class="step-title">Creează Cont Vercel</span>
+        <p style="margin-top: 15px;">Mergi pe <code>https://vercel.com</code> și:</p>
+        <ol>
+            <li>Click <strong>Sign Up</strong></li>
+            <li>Alege <strong>"Continue with GitHub"</strong></li>
+            <li>Autorizează Vercel să acceseze GitHub-ul tău</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">5</span>
+        <span class="step-title">Importă Repository-ul</span>
+        <p style="margin-top: 15px;">În dashboard-ul Vercel:</p>
+        <ol>
+            <li>Click <strong>"Add New..."</strong> → <strong>"Project"</strong></li>
+            <li>Vei vedea lista de repositories din GitHub</li>
+            <li>Click <strong>Import</strong> pe <code>partizan-resort-website</code></li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">6</span>
+        <span class="step-title">Configurare Deploy</span>
+        <p style="margin-top: 15px;">Vercel detectează automat că e Next.js. Doar verifică:</p>
+        <ul>
+            <li><strong>Framework Preset:</strong> Next.js (auto-detectat)</li>
+            <li><strong>Root Directory:</strong> <code>./</code> (lasă default)</li>
+            <li><strong>Build Command:</strong> <code>next build</code> (auto)</li>
+            <li><strong>Output Directory:</strong> <code>.next</code> (auto)</li>
+        </ul>
+        <p>Click <strong>Deploy</strong> și așteaptă 1-2 minute!</p>
+    </div>
+    
+    <div class="success">
+        <strong>🎉 FELICITĂRI!</strong> Website-ul este LIVE la un URL Vercel (ex: <code>partizan-resort-website.vercel.app</code>)! Vei primi link-ul la final de deployment.
+    </div>
+    
+    <div class="page-break"></div>
+    
+    <h2>Metoda 2: Deploy Direct prin CLI (Alternativă)</h2>
+    
+    <div class="step">
+        <span class="step-number">1</span>
+        <span class="step-title">Instalează Vercel CLI</span>
+        <p style="margin-top: 15px;">În terminal:</p>
+        <pre><code>npm install -g vercel</code></pre>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Login în Vercel</span>
+        <p style="margin-top: 15px;">Rulează:</p>
+        <pre><code>vercel login</code></pre>
+        <p>Alege metoda de autentificare (GitHub, Email, etc.) și urmează pașii.</p>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">3</span>
+        <span class="step-title">Deploy Proiectul</span>
+        <p style="margin-top: 15px;">În folder-ul proiectului, rulează:</p>
+        <pre><code>vercel --prod</code></pre>
+        <p>Răspunde la întrebări:</p>
+        <ul>
+            <li><strong>Set up and deploy?</strong> → Yes</li>
+            <li><strong>Which scope?</strong> → Alege contul tău</li>
+            <li><strong>Link to existing project?</strong> → No</li>
+            <li><strong>Project name?</strong> → partizan-resort-website</li>
+            <li><strong>Directory?</strong> → <code>./</code> (apasă Enter)</li>
+        </ul>
+        <p>Deployment va rula automat!</p>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 6 -->
+<div class="content">
+    <h1>6. Configurare Domeniu Custom</h1>
+    
+    <p>Acum website-ul este live la <code>partizan-resort-website.vercel.app</code>, dar vrei să-l conectezi la domeniul tău: <code>partizanresort.com</code></p>
+    
+    <div class="step">
+        <span class="step-number">1</span>
+        <span class="step-title">Verifică Ownership-ul Domeniului</span>
+        <p style="margin-top: 15px;">Asigură-te că ai acces la DNS settings pentru <code>partizanresort.com</code>. De obicei, îl gestionezi prin:</p>
+        <ul>
+            <li>GoDaddy</li>
+            <li>Namecheap</li>
+            <li>Cloudflare</li>
+            <li>Google Domains</li>
+            <li>Sau orice alt registrar</li>
+        </ul>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Adaugă Domeniu în Vercel</span>
+        <p style="margin-top: 15px;">În dashboard Vercel:</p>
+        <ol>
+            <li>Click pe proiectul <code>partizan-resort-website</code></li>
+            <li>Mergi la tab-ul <strong>Settings</strong></li>
+            <li>Click <strong>Domains</strong> (meniu stânga)</li>
+            <li>În câmpul "Domain", scrie <code>partizanresort.com</code></li>
+            <li>Click <strong>Add</strong></li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">3</span>
+        <span class="step-title">Copiază DNS Records</span>
+        <p style="margin-top: 15px;">Vercel îți va arăta ce records DNS trebuie adăugate. De obicei:</p>
+        <table>
+            <tr>
+                <th>Type</th>
+                <th>Name</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>@</td>
+                <td>76.76.21.21</td>
+            </tr>
+            <tr>
+                <td>CNAME</td>
+                <td>www</td>
+                <td>cname.vercel-dns.com</td>
+            </tr>
+        </table>
+        <p><strong>ATENȚIE:</strong> Valorile exacte pot fi diferite! Copiază ce îți arată Vercel!</p>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">4</span>
+        <span class="step-title">Configurează DNS la Registrar</span>
+        <p style="margin-top: 15px;">Loghează-te în contul unde ai cumpărat domeniul și mergi la <strong>DNS Settings</strong> sau <strong>DNS Management</strong>.</p>
+        
+        <h4>Exemplu GoDaddy:</h4>
+        <ol>
+            <li>Mergi la <strong>My Products</strong></li>
+            <li>Click pe <strong>DNS</strong> lângă domeniul tău</li>
+            <li>Click <strong>Add Record</strong></li>
+            <li>Adaugă record-urile A și CNAME de la Vercel</li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+        
+        <h4>Exemplu Cloudflare:</h4>
+        <ol>
+            <li>Selectează domeniul <code>partizanresort.com</code></li>
+            <li>Mergi la tab-ul <strong>DNS</strong></li>
+            <li>Click <strong>Add record</strong></li>
+            <li>Completează Type, Name, Target conform Vercel</li>
+            <li>Setează <strong>Proxy status</strong> la <strong>DNS only</strong> (cloud gri, NU portocaliu!)</li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+    </div>
+    
+    <div class="warning">
+        <strong>⚠️ ATENȚIE CLOUDFLARE:</strong> Dacă folosești Cloudflare, OBLIGATORIU setează proxy la <strong>DNS only</strong> (cloud gri). Altfel, SSL-ul nu va funcționa corect!
+    </div>
+    
+    <div class="step">
+        <span class="step-number">5</span>
+        <span class="step-title">Așteaptă Propagarea DNS</span>
+        <p style="margin-top: 15px;">DNS changes pot dura între <strong>5 minute și 48 ore</strong> pentru a se propaga global. De obicei, durează 15-30 minute.</p>
+        <p>Verifică status-ul în Vercel - când domeniul arată <strong>"Valid Configuration"</strong> și certificatul SSL e activ, ești gata!</p>
+    </div>
+    
+    <div class="success">
+        <strong>🎉 SUCCES!</strong> Website-ul este acum accesibil la <code>https://partizanresort.com</code> cu SSL activ (lacăt verde în browser)!
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 7 -->
+<div class="content">
+    <h1>7. Personalizare Conținut</h1>
+    
+    <p>Acum că website-ul este live, hai să-l personalizăm cu informațiile reale ale clientului!</p>
+    
+    <h2>7.1 Adăugare Imagini</h2>
+    
+    <div class="step">
+        <span class="step-number">1</span>
+        <span class="step-title">Pregătește Imaginile</span>
+        <p style="margin-top: 15px;">Înainte de upload, optimizează imaginile:</p>
+        <ul>
+            <li><strong>Format:</strong> JPG pentru fotografii, PNG pentru logo-uri</li>
+            <li><strong>Rezoluție:</strong> Max 1920x1080px (Full HD)</li>
+            <li><strong>Mărime:</strong> Sub 500KB per imagine (folosește TinyPNG.com pentru compresie)</li>
+            <li><strong>Nume descriptive:</strong> <code>deluxe-room-view.jpg</code> nu <code>IMG_1234.jpg</code></li>
+        </ul>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Organizează în Foldere</span>
+        <p style="margin-top: 15px;">Copiază imaginile în structura corectă:</p>
+        <pre><code>public/images/
+├── hero-bg.jpg              (imagine principală homepage)
+├── rooms/
+│   ├── deluxe-1.jpg
+│   ├── deluxe-2.jpg
+│   ├── suite-1.jpg
+│   └── ...
+├── restaurant/
+│   └── restaurant-main.jpg
+├── activities/
+│   ├── boat-tour.jpg
+│   ├── hiking.jpg
+│   └── ...
+└── gallery/
+    └── (alte poze pentru galerie)</code></pre>
+    </div>
+    
+    <div class="tip">
+        <strong>💡 TIP PRO:</strong> Convertește imaginile în WebP pentru încărcare mai rapidă! Folosește <code>https://squoosh.app</code> (gratis, online).
+    </div>
+    
+    <h2>7.2 Modificare Date Camere</h2>
+    
+    <div class="step">
+        <span class="step-number">3</span>
+        <span class="step-title">Editează src/data/rooms.ts</span>
+        <p style="margin-top: 15px;">Deschide fișierul în VS Code și modifică:</p>
+        <ul>
+            <li><strong>name:</strong> Numele camerei (ex: "Suite Panoramică")</li>
+            <li><strong>description:</strong> Descrierea camerei</li>
+            <li><strong>price:</strong> Prețul pe noapte (RON)</li>
+            <li><strong>capacity:</strong> Număr persoane</li>
+            <li><strong>size:</strong> Dimensiune în m²</li>
+            <li><strong>amenities:</strong> Lista de facilități</li>
+            <li><strong>images:</strong> Path-ul la imagini (ex: <code>/images/rooms/suite-1.jpg</code>)</li>
+        </ul>
+    </div>
+    
+    <h2>7.3 Modificare Activități</h2>
+    
+    <div class="step">
+        <span class="step-number">4</span>
+        <span class="step-title">Editează src/data/activities.ts</span>
+        <p style="margin-top: 15px;">Actualizează activitățile oferite de resort:</p>
+        <ul>
+            <li>Adaugă/șterge activități</li>
+            <li>Actualizează prețuri și durate</li>
+            <li>Modifică descrierile</li>
+            <li>Setează <code>featured: true</code> pentru activitățile principale</li>
+        </ul>
+    </div>
+    
+    <h2>7.4 Contact & WhatsApp</h2>
+    
+    <div class="step">
+        <span class="step-number">5</span>
+        <span class="step-title">Actualizează Numărul de Telefon</span>
+        <p style="margin-top: 15px;">Caută în toate fișierele <code>40123456789</code> și înlocuiește cu numărul real de WhatsApp al clientului (format internațional, fără +, fără spații).</p>
+        <p>Fișiere de editat:</p>
+        <ul>
+            <li><code>src/components/Header.tsx</code> (linia 49)</li>
+            <li><code>src/components/RoomCard.tsx</code> (linia 77)</li>
+            <li><code>src/components/Contact.tsx</code> (linia 23, 79, 96)</li>
+            <li><code>src/components/Footer.tsx</code> (linia 48)</li>
+        </ul>
+        <p><strong>SEARCH & REPLACE în VS Code:</strong> Apasă <code>Ctrl+Shift+H</code> → scrie <code>40123456789</code> în "Find" → scrie noul număr în "Replace" → Click <strong>Replace All</strong></p>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">6</span>
+        <span class="step-title">Actualizează Email și Adresă</span>
+        <p style="margin-top: 15px;">În <code>src/components/Contact.tsx</code>:</p>
+        <ul>
+            <li><strong>Email:</strong> Linia 108 - <code>contact@partizanresort.com</code></li>
+            <li><strong>Adresă:</strong> Liniile 117-120 - Strada, oraș, județ</li>
+        </ul>
+    </div>
+    
+    <h2>7.5 Push Modificările pe Vercel</h2>
+    
+    <div class="step">
+        <span class="step-number">7</span>
+        <span class="step-title">Deploy Actualizările</span>
+        <p style="margin-top: 15px;">După ce faci modificările, push pe GitHub și Vercel va re-deploya automat:</p>
+        <pre><code>git add .
+git commit -m "Update content and images"
+git push</code></pre>
+        <p>Mergi în Vercel dashboard și vei vedea deployment-ul în progres. În 1-2 minute, modificările vor fi LIVE!</p>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 8 -->
+<div class="content">
+    <h1>8. Optimizări Post-Launch</h1>
+    
+    <h2>8.1 Google Analytics</h2>
+    
+    <div class="step">
+        <span class="step-number">1</span>
+        <span class="step-title">Creează Cont Google Analytics</span>
+        <p style="margin-top: 15px;">Mergi pe <code>https://analytics.google.com</code> și:</p>
+        <ol>
+            <li>Click <strong>Start measuring</strong></li>
+            <li>Account name: <code>Partizan Resort</code></li>
+            <li>Property name: <code>Website Partizan Resort</code></li>
+            <li>Time zone: <code>Romania</code></li>
+            <li>Currency: <code>Romanian Leu (RON)</code></li>
+            <li>Click <strong>Create</strong> și acceptă terms</li>
+        </ol>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">2</span>
+        <span class="step-title">Obține Measurement ID</span>
+        <p style="margin-top: 15px;">După creare, vei vedea un <strong>Measurement ID</strong> de genul: <code>G-XXXXXXXXXX</code>. Copiază-l!</p>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">3</span>
+        <span class="step-title">Integrează în Next.js</span>
+        <p style="margin-top: 15px;">Adaugă Google Analytics în <code>src/app/layout.tsx</code>, în <code>&lt;head&gt;</code>:</p>
+        <pre><code>&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+&lt;/script&gt;</code></pre>
+        <p>Push pe GitHub și gata! Analytics va începe să colecteze date în 24-48 ore.</p>
+    </div>
+    
+    <h2>8.2 SEO Optimization</h2>
+    
+    <div class="step">
+        <span class="step-number">4</span>
+        <span class="step-title">Verifică Meta Tags</span>
+        <p style="margin-top: 15px;">În <code>src/app/layout.tsx</code>, asigură-te că metadata este corectă:</p>
+        <ul>
+            <li><strong>title:</strong> Include keyword-uri (ex: "Resort Dunăre")</li>
+            <li><strong>description:</strong> Max 160 caractere, atractiv</li>
+            <li><strong>keywords:</strong> Locale și specific business</li>
+        </ul>
+    </div>
+    
+    <div class="step">
+        <span class="step-number">5</span>
+        <span class="step-title">Google Search Console</span>
+        <p style="margin-top: 15px;">Mergi pe <code>https://search.google.com/search-console</code> și:</p>
+        <ol>
+            <li>Click <strong>Add property</strong></li>
+            <li>Domain: <code>partizanresort.com</code></li>
+            <li>Verifică ownership prin DNS (TXT record)</li>
+            <li>Așteaptă indexarea (2-7 zile)</li>
+        </ol>
+    </div>
+    
+    <h2>8.3 Performance Testing</h2>
+    
+    <div class="step">
+        <span class="step-number">6</span>
+        <span class="step-title">Rulează Lighthouse Audit</span>
+        <p style="margin-top: 15px;">În Chrome:</p>
+        <ol>
+            <li>Deschide website-ul</li>
+            <li>Apasă <code>F12</code> (DevTools)</li>
+            <li>Mergi la tab-ul <strong>Lighthouse</strong></li>
+            <li>Selectează <strong>Performance, Accessibility, SEO</strong></li>
+            <li>Click <strong>Generate report</strong></li>
+        </ol>
+        <p>Țintă: <strong>90+ scor</strong> la toate categoriile!</p>
+    </div>
+    
+    <div class="tip">
+        <strong>💡 TIP PRO:</strong> Dacă scorul e sub 90, principalele probleme sunt de obicei imaginile mari. Comprimă-le cu TinyPNG sau convertește în WebP!
+    </div>
+    
+    <h2>8.4 Backup & Version Control</h2>
+    
+    <div class="step">
+        <span class="step-number">7</span>
+        <span class="step-title">Regulă de Aur</span>
+        <p style="margin-top: 15px;"><strong>FACI MODIFICĂRI → COMMIT → PUSH!</strong></p>
+        <pre><code>git add .
+git commit -m "Descriere scurtă a modificării"
+git push</code></pre>
+        <p>Astfel ai istoric complet și poți reveni la orice versiune anterioară dacă ceva se strică!</p>
+    </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 9 -->
+<div class="content">
+    <h1>9. Troubleshooting</h1>
+    
+    <h2>Probleme Frecvente & Soluții</h2>
+    
+    <div class="warning">
+        <strong>EROARE:</strong> <code>npm: command not found</code>
+        <p><strong>Cauză:</strong> Node.js nu este instalat corect sau PATH-ul nu e setat.</p>
+        <p><strong>Soluție:</strong></p>
+        <ol>
+            <li>Reinstalează Node.js de pe nodejs.org</li>
+            <li>Restartează computerul</li>
+            <li>Deschide un terminal NOU și verifică: <code>node --version</code></li>
+        </ol>
+    </div>
+    
+    <div class="warning">
+        <strong>EROARE:</strong> <code>Error: Cannot find module 'next'</code>
+        <p><strong>Cauză:</strong> Dependențele nu sunt instalate.</p>
+        <p><strong>Soluție:</strong></p>
+        <pre><code>rm -rf node_modules package-lock.json
+npm install</code></pre>
+    </div>
+    
+    <div class="warning">
+        <strong>EROARE:</strong> <code>Port 3000 is already in use</code>
+        <p><strong>Cauză:</strong> Alt proces folosește portul 3000.</p>
+        <p><strong>Soluție:</strong></p>
+        <ul>
+            <li><strong>Windows:</strong> Deschide Task Manager → Termină procesul Node.js</li>
+            <li><strong>macOS/Linux:</strong> <code>lsof -ti:3000 | xargs kill -9</code></li>
+        </ul>
+        <p>SAU rulează pe alt port:</p>
+        <pre><code>PORT=3001 npm run dev</code></pre>
+    </div>
+    
+    <div class="warning">
+        <strong>PROBLEMĂ:</strong> Domeniul nu se conectează la Vercel
+        <p><strong>Verificări:</strong></p>
+        <ul class="checklist">
+            <li>DNS records sunt setate EXACT ca în Vercel?</li>
+            <li>Cloudflare proxy e setat la DNS only (cloud gri)?</li>
+            <li>Au trecut cel puțin 30 minute de la modificarea DNS?</li>
+            <li>Verifică propagarea: <code>https://dnschecker.org</code></li>
+        </ul>
+    </div>
+    
+    <div class="warning">
+        <strong>PROBLEMĂ:</strong> Imaginile nu se încarcă
+        <p><strong>Cauze posibile:</strong></p>
+        <ul>
+            <li>Path-ul e greșit (verifică că începe cu <code>/images/</code>)</li>
+            <li>Imaginea nu există în <code>public/images/</code></li>
+            <li>Extensia fișierului e greșită (.jpg vs .jpeg)</li>
+        </ul>
+        <p><strong>Soluție:</strong> Verifică în browser DevTools (F12) → Console pentru erori 404.</p>
+    </div>
+    
+    <div class="warning">
+        <strong>PROBLEMĂ:</strong> Website încarcă încet
+        <p><strong>Soluții:</strong></p>
+        <ul>
+            <li>Comprimă imaginile cu <code>https://tinypng.com</code></li>
+            <li>Convertește în WebP cu <code>https://squoosh.app</code></li>
+            <li>Verifică că nu ai imagini mai mari de 500KB</li>
+            <li>Rulează Lighthouse audit pentru recomandări</li>
+        </ul>
+    </div>
+    
+    <h2>Unde să Ceri Ajutor</h2>
+    
+    <ul>
+        <li><strong>Next.js Docs:</strong> <code>https://nextjs.org/docs</code></li>
+        <li><strong>Vercel Support:</strong> <code>https://vercel.com/support</code></li>
+        <li><strong>Stack Overflow:</strong> Caută error message-ul exact</li>
+        <li><strong>Agentic Support:</strong> <code>fws.software@outlook.com</code></li>
+    </ul>
+</div>
+
+<div class="page-break"></div>
+
+<!-- SECTION 10 -->
+<div class="content">
+    <h1>10. Checklist Final</h1>
+    
+    <h2>Pre-Launch</h2>
+    <ul class="checklist">
+        <li>Node.js 18+ instalat</li>
+        <li>Proiect creat local</li>
+        <li>Dependențe instalate (<code>npm install</code>)</li>
+        <li>Website testat local (<code>npm run dev</code>)</li>
+        <li>GitHub repository creat</li>
+        <li>Cod push-uit pe GitHub</li>
+        <li>Cont Vercel creat</li>
+        <li>Proiect deploiat pe Vercel</li>
+    </ul>
+    
+    <h2>Configurare Domeniu</h2>
+    <ul class="checklist">
+        <li>Domeniu cumpărat</li>
+        <li>Domeniu adăugat în Vercel</li>
+        <li>DNS records setate corect</li>
+        <li>SSL certificate activ (lacăt verde)</li>
+        <li>Domeniu funcțional (test <code>https://partizanresort.com</code>)</li>
+    </ul>
+    
+    <h2>Conținut & Personalizare</h2>
+    <ul class="checklist">
+        <li>Imagini optimizate și urcate</li>
+        <li>Date camere actualizate</li>
+        <li>Activități actualizate</li>
+        <li>Număr WhatsApp corect</li>
+        <li>Email de contact corect</li>
+        <li>Adresă actualizată</li>
+        <li>Prețuri actualizate</li>
+        <li>Meta tags SEO optimizate</li>
+    </ul>
+    
+    <h2>Post-Launch</h2>
+    <ul class="checklist">
+        <li>Google Analytics instalat</li>
+        <li>Google Search Console configurat</li>
+        <li>Lighthouse score 90+</li>
+        <li>Mobile responsive testat</li>
+        <li>Formulare testate</li>
+        <li>Butoane WhatsApp funcționale</li>
+        <li>Toate link-urile verificate</li>
+        <li>Cross-browser testing (Chrome, Safari, Firefox)</li>
+    </ul>
+    
+    <h2>Maintenance</h2>
+    <ul class="checklist">
+        <li>Backup regular (push pe GitHub)</li>
+        <li>Monitorizare Analytics săptămânal</li>
+        <li>Update imagini/conținut lunar</li>
+        <li>Check performance trimestrial</li>
+        <li>Actualizare dependențe Next.js la 6 luni</li>
+    </ul>
+    
+    <div class="success">
+        <strong>🎉 FELICITĂRI!</strong> Dacă ai bifat toate checklist-urile, website-ul este 100% gata și profesional!
+    </div>
+    
+    <div class="footer">
+        <h3>Template Reutilizabil</h3>
+        <p>Acest ghid funcționează pentru ORICE website Next.js. Pentru viitoare proiecte, urmează aceeași structură:</p>
+        <ol>
+            <li>Clonează structura proiectului</li>
+            <li>Modifică conținutul în <code>src/data/</code></li>
+            <li>Personalizează culorile în <code>tailwind.config.ts</code></li>
+            <li>Adaugă imagini în <code>public/images/</code></li>
+            <li>Deploy pe Vercel</li>
+            <li>Conectează domeniu nou</li>
+        </ol>
+        <p style="margin-top: 30px; text-align: center; font-size: 12px;">
+            <strong>Website by Agentic</strong><br/>
+            <span style="color: #9523ff;">createagentics.com</span> | fws.software@outlook.com
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

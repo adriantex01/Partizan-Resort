@@ -1,0 +1,140 @@
+═══════════════════════════════════════════════════════════════════
+    PARTIZAN RESORT WEBSITE - QUICK START GUIDE
+═══════════════════════════════════════════════════════════════════
+
+📦 SETUP RAPID (5 minute)
+
+1. Asigură-te că ai Node.js instalat:
+   node --version
+   (Dacă nu, instalează de la: https://nodejs.org)
+
+2. Instalează dependențele:
+   npm install
+
+3. Rulează local pentru testare:
+   npm run dev
+   
+   Deschide: http://localhost:3000
+
+4. Pentru producție:
+   npm run build
+   npm start
+
+═══════════════════════════════════════════════════════════════════
+    DEPLOYMENT PE VERCEL (10 minute)
+═══════════════════════════════════════════════════════════════════
+
+METODA 1 - GitHub + Vercel (RECOMANDAT):
+
+1. Push pe GitHub:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/USERNAME/repo-name.git
+   git push -u origin main
+
+2. Conectează la Vercel:
+   - Mergi pe https://vercel.com
+   - Click "New Project"
+   - Import repository-ul
+   - Click "Deploy"
+
+METODA 2 - Vercel CLI (Mai rapid):
+
+1. npm install -g vercel
+2. vercel login
+3. vercel --prod
+
+═══════════════════════════════════════════════════════════════════
+    PERSONALIZARE RAPIDĂ
+═══════════════════════════════════════════════════════════════════
+
+📝 DATE:
+- Camere: src/data/rooms.ts
+- Activități: src/data/activities.ts
+
+🎨 CULORI:
+- tailwind.config.ts (culori forest, gold, cream)
+
+📸 IMAGINI:
+- public/images/hero-bg.jpg (1920x1080px)
+- public/images/rooms/ (poze camere)
+- public/images/restaurant/ (poze restaurant)
+- public/images/activities/ (poze activități)
+
+📞 CONTACT:
+Caută și înlocuiește în toate fișierele:
+- "40123456789" → numărul real WhatsApp
+- "contact@partizanresort.com" → email real
+
+═══════════════════════════════════════════════════════════════════
+    STRUCTURA PROIECT
+═══════════════════════════════════════════════════════════════════
+
+partizan-website/
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx       (Meta tags, fonts)
+│   │   ├── page.tsx         (Homepage)
+│   │   └── globals.css      (Stiluri globale)
+│   ├── components/
+│   │   ├── Header.tsx       (Navigație)
+│   │   ├── Hero.tsx         (Secțiune hero)
+│   │   ├── Rooms.tsx        (Camere)
+│   │   ├── Restaurant.tsx   (Restaurant)
+│   │   ├── Activities.tsx   (Activități)
+│   │   ├── Contact.tsx      (Contact + formular)
+│   │   └── Footer.tsx       (Footer)
+│   ├── data/
+│   │   ├── rooms.ts         (Date camere)
+│   │   └── activities.ts    (Date activități)
+│   └── types/
+│       └── index.ts         (TypeScript types)
+├── public/
+│   └── images/              (Toate imaginile)
+├── package.json             (Dependențe)
+├── next.config.js           (Configurare Next.js)
+├── tailwind.config.ts       (Configurare Tailwind)
+└── README.md                (Documentație completă)
+
+═══════════════════════════════════════════════════════════════════
+    COMENZI UTILE
+═══════════════════════════════════════════════════════════════════
+
+npm run dev        → Rulează în mod development (hot reload)
+npm run build      → Build pentru producție
+npm start          → Rulează build-ul de producție
+npm run lint       → Verifică erori de cod
+
+git add .          → Adaugă toate modificările
+git commit -m ""   → Salvează modificările
+git push           → Upload pe GitHub
+
+═══════════════════════════════════════════════════════════════════
+    DUPĂ DEPLOYMENT
+═══════════════════════════════════════════════════════════════════
+
+✅ Configurează domeniul custom în Vercel
+✅ Adaugă Google Analytics
+✅ Setup Google Search Console
+✅ Test pe dispozitive mobile
+✅ Rulează Lighthouse audit (target: 90+)
+✅ Verifică toate formulare și link-uri
+
+═══════════════════════════════════════════════════════════════════
+    TROUBLESHOOTING
+═══════════════════════════════════════════════════════════════════
+
+"Command not found" → Instalează Node.js
+"Port in use"       → Schimbă portul: PORT=3001 npm run dev
+"Module not found"  → Rulează: npm install
+Imagini nu apar    → Verifică path-ul (trebuie să înceapă cu /images/)
+
+═══════════════════════════════════════════════════════════════════
+
+📚 DOCUMENTAȚIE COMPLETĂ: Vezi GHID_WEBSITE_COMPLET.pdf
+
+💬 SUPPORT: fws.software@outlook.com
+🌐 WEBSITE: createagentics.com
+
+═══════════════════════════════════════════════════════════════════
